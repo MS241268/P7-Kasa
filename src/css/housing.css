@@ -1,0 +1,14 @@
+.lgtDetails {
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.articleCollapse {
+	width: 582px;
+	/* margin: auto; */
+}
+ul {
+	font-size: 18px;
+}
