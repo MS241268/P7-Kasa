@@ -13,7 +13,6 @@
 	background-color: #FF6060 ;
 	border-radius: 18px;
 	border: #FF6060;
-	color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,6 +21,7 @@
 .btnCollapse span {
 	margin-left: 2%;
 	margin-right: auto;
+	color: white;
 }
 
 .arrowCollapse {
@@ -32,7 +32,6 @@
 	width: 100%;
 	padding: 2%;
 	list-style: none;
-	color: #FF6060;
 }
 
 

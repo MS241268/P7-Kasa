@@ -2,7 +2,6 @@
 	width : 95%;
 	height: 415px;
 	border-radius: 25px;
-	/* padding: 3% 2% 0% 3%; */
 	background-color: #FF6060;
 	margin: auto;
 	margin-bottom: 40px;
@@ -12,27 +11,42 @@
 	width: 95%;
 	margin: auto;
 	height: 130px;
-	/* background-color: #FF6060; */
 	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.information article {
-	width: 600px;
-}
-.information h1 {
-	font-size: 36px;
-	font-weight: lighter;
-	color: #FF6060;
+.information_section {
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 40px;
 }
 
-.information p {
+.information_section h1 {
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+.information_section p {
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 10px;
 	color: #FF6060;
+}
+
+.information_left_article {
+	width: 45%;
+}
+
+.tags_ul {
+	font-size: 14px;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
 }
 
 .lgtDetails {

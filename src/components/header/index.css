@@ -4,31 +4,35 @@ header {
 	margin-bottom: 40px;
 	padding: 3% 2% 0% 3%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
-nav {
-	width : 20%;
+.logo_link_container{
+	margin-right: auto;
+}
+
+header nav {
 	margin-right: 2%;
 }
 
-ul {
-	width : 100%;
+header ul {
+	gap: 30px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: auto;
+	flex-wrap: nowrap;
 	list-style-type: none;
+}
+
+header ul li {
+
 }
 
 header a {
 	text-decoration: none;
 	font-size: 24px;
-	color:#FF6060;
+
 }
 
-ul li :hover {
+header ul li :hover {
 	text-decoration: underline;
 }

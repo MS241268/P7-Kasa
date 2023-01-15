@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import Collapse from "../components/collapse"
 import lgtsDataBase from '../data_files/logements.json'
+import Tags from '../components/tag'
 import '../css/housing.css'
 
 
@@ -11,17 +12,24 @@ function Housing() {
 	lgtData.id === productId)
 	
 	const { title, location, rating, host, equipments, description, pictures} = lgt
-	console.log(lgt)
 	return (
 		<main>
 			<section className="slider">
 
 			</section>
 
-			<section className="information">
-				<article>
+			<section className="information_section">
+				<article className = " information_left_article">
 					<h1>{ title }</h1>
 					<p>{ location }</p>
+					<ul className="tags_ul">
+					{ lgt.tags.map ((tag, index) =>
+					(
+						<Tags key = { index } tags = { tag }></Tags>
+
+					)
+					)}
+					</ul>
 				</article>
 
 				<article>
