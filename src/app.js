@@ -17,7 +17,6 @@ function App() {
           <Route path = "products/:productId" element = { <Housing /> } />
           <Route path = "*" element = { <Error /> } />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   )

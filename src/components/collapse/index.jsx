@@ -5,7 +5,6 @@ import upArrow from '../../images/up_arrow_collapse.svg'
 
 function Collapse (props) {
 	const [open, setOpen] = useState(false)
-	console.log(open)
 	function toggle () {
 		setOpen(!open)
 	}

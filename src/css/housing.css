@@ -1,3 +1,40 @@
+.slider {
+	width : 95%;
+	height: 415px;
+	border-radius: 25px;
+	/* padding: 3% 2% 0% 3%; */
+	background-color: #FF6060;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.information {
+	width: 95%;
+	margin: auto;
+	height: 130px;
+	/* background-color: #FF6060; */
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.information article {
+	width: 600px;
+}
+.information h1 {
+	font-size: 36px;
+	font-weight: lighter;
+	color: #FF6060;
+}
+
+.information p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	color: #FF6060;
+}
+
 .lgtDetails {
 	width:100%;
 	display: flex;
@@ -5,10 +42,11 @@
 	justify-content: space-between;
 }
 
-.articleCollapse {
-	width: 582px;
-	/* margin: auto; */
+.lgtDetails .articleCollapse{
+	width: 45%;
+	margin-top: 0px;
 }
-ul {
+
+.lgtDetails .articleCollapse ul {
 	font-size: 18px;
 }

@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom"
 import '../css/home.css'
+import lgtsDataBase from '../data_files/logements.json'
 import homeBanner from '../images/banner_background_home.jpg'
+import Cards from "../card/index"
 
 function Home() {
 	return (
@@ -8,9 +10,20 @@ function Home() {
 		<section className = "homeBanner">
 			<img src = { homeBanner } alt = ""/>
 			<h1>Chez vous, partout et ailleurs</h1>
-			<div className = "homeBackGround"></div>
+			<div className = "homeBannerBackGround"></div>
+
 		</section>
-			<h3><NavLink to="products/:productId">Le 1er produit</NavLink></h3>
+
+		<section className="cards_section">
+			{ lgtsDataBase.map ((lgtData) => {
+				return (
+					<NavLink to = { `/products/${lgtData.id}` }>
+					<Cards key={ lgtData.id } cover = { lgtData.cover } title = { lgtData.title }>
+					</Cards>
+					</NavLink>
+				)
+			})}
+		</section>
 	</main>
 	)
 }
