@@ -19,7 +19,7 @@ function Housing() {
 			</section>
 
 			<section className="information_section">
-				<article className = " information_left_article">
+				<article>
 					<h1>{ title }</h1>
 					<p>{ location }</p>
 					<ul className="tags_ul">

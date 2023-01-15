@@ -19,9 +19,9 @@
 
 .information_section {
 	width: 95%;
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	margin: auto;
 	margin-bottom: 40px;
 }
 
@@ -37,15 +37,15 @@
 	color: #FF6060;
 }
 
-.information_left_article {
+.information_section article {
 	width: 45%;
 }
 
 .tags_ul {
 	font-size: 14px;
-	width: 50%;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	list-style: none;
 }
 
