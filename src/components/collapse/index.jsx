@@ -9,7 +9,7 @@ function Collapse (props) {
 		setOpen(!open)
 	}
 	return (
-		<article className={open ? 'articleCollapse':'articleCollapseClosed'}>
+		<article className={open ? 'articleOpenedCollapse':'articleClosedCollapse'}>
 			<button onClick = { toggle } className = 'btnCollapse'>
 				<span>{ props.label }</span>
 				<img src= { open ? upArrow : downArrow } alt = "" className='arrowCollapse'/>

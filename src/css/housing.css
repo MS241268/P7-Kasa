@@ -69,18 +69,12 @@
 }
 
 .housingDetails {
-	/* width:100%; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.housingDetails .articleCollapse{
-	width: 45%;
-	margin-top: 0px;
-}
-
-.housingDetails .articleCollapseClosed{
+.housingDetails .articleOpenedCollapse ,.articleClosedCollapse{
 	width: 45%;
 	margin-top: 0px;
 }
