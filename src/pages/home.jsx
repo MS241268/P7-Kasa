@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom"
 import '../css/home.css'
 import lgtsDataBase from '../data_files/logements.json'
 import homeBanner from '../images/banner_background_home.jpg'
-import Cards from "../card/index"
+import Cards from "../components/card/index"
 
 function Home() {
 	return (
 	<main>
 		<section className = "homeBanner">
-			<img src = { homeBanner } alt = ""/>
+			<img src = { homeBanner } alt = "Forêt et rochers en bord de mer"/>
 			<h1>Chez vous, partout et ailleurs</h1>
 			<div className = "homeBannerBackGround"></div>
 

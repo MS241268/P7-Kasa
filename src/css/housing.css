@@ -1,12 +1,3 @@
-.slider {
-	width : 95%;
-	height: 415px;
-	border-radius: 25px;
-	background-color: #FF6060;
-	margin: auto;
-	margin-bottom: 40px;
-}
-
 .information {
 	width: 95%;
 	margin: auto;
@@ -34,11 +25,12 @@
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #FF6060;
 }
 
-.information_section article {
-	width: 45%;
+.left_article {
+	width: 70%;
 }
 
 .tags_ul {
@@ -47,6 +39,33 @@
 	display: flex;
 	justify-content: flex-start;
 	list-style: none;
+}
+
+.right_article{
+	width: 20%;
+}
+
+.host_div {
+	width: 100%;
+	display: flex;
+	margin: auto;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.host_name {
+	width:30%;
+}
+
+.picture {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+
+.rating_div {
+	text-align: end;
 }
 
 .lgtDetails {
