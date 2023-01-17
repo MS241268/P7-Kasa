@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import Collapse from "../components/collapse"
-import lgtsDataBase from '../data_files/logements.json'
+import housingsDataBase from '../data_files/logements.json'
 import Tags from '../components/tag'
 import Slider from '../components/slider'
 import fullStar from '../images/full_star.svg'
@@ -11,22 +11,20 @@ const stars = [1,2,3,4,5]
 
 function Housing() {
 	const {productId} = useParams()
-	const lgt =
-	lgtsDataBase.find ((lgtData) =>
-	lgtData.id === productId)
-	
-	const { title, location, equipments, description} = lgt
-
+	const housing =
+	housingsDataBase.find ((housingData) =>
+	housingData.id === productId)
+	console.log({housing})
 	return (
 		<main>
 			<Slider></Slider>
 
 			<section className="information_section">
 				<article className="left_article">
-					<h1>{ title }</h1>
-					<p>{ location }</p>
+					<h1>{ housing.title }</h1>
+					<p>{ housing.location }</p>
 					<ul className="tags_ul">
-					{ lgt.tags.map ((tag, index) =>
+					{ housing.tags.map ((tag, index) =>
 					(
 						<Tags key = { index } tags = { tag }></Tags>
 					)
@@ -38,13 +36,13 @@ function Housing() {
 					
 					<div className = "host_div">
 						
-						<div className = "host_name">{ lgt.host.name }</div>
-						<img src = { lgt.host.picture } alt = "Profil annonceur" className = "picture"/>
+						<div className = "host_name">{ housing.host.name }</div>
+						<img src = { housing.host.picture } alt = "Profil annonceur" className = "picture"/>
 					</div>
 
 					<div className= "rating_div">
 						{ stars.map ((level) =>
-						lgt.rating >= level ? (
+						housing.rating >= level ? (
 							<img key = { level.toString() }
 							className = "star"
 							src = { fullStar } alt = "Etoile orange"/>
@@ -57,9 +55,9 @@ function Housing() {
 				</article>
 			</section>
 
-			<section className = "lgtDetails">
-				<Collapse label = "Description" content = { description }></Collapse>
-				<Collapse label = "Equipements" content = { equipments.map((equipments, index) =>
+			<section className = "housingDetails">
+				<Collapse label = "Description" content = { housing.description }></Collapse>
+				<Collapse label = "Equipements" content = { housing.equipments.map((equipments, index) =>
 					(<li key = { index }>
 						{ equipments }
 					</li>))}>

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import '../css/home.css'
-import lgtsDataBase from '../data_files/logements.json'
+import housingsDataBase from '../data_files/logements.json'
 import homeBanner from '../images/banner_background_home.jpg'
 import Cards from "../components/card/index"
 
@@ -15,10 +15,10 @@ function Home() {
 		</section>
 
 		<section className="cards_section">
-			{ lgtsDataBase.map ((lgtData) => {
+			{ housingsDataBase.map ((housingData) => {
 				return (
-					<NavLink to = { `/products/${lgtData.id}` }>
-					<Cards key={ lgtData.id } cover = { lgtData.cover } title = { lgtData.title }>
+					<NavLink to = { `/products/${housingData.id}` }>
+					<Cards key={ housingData.id } cover = { housingData.cover } title = { housingData.title }>
 					</Cards>
 					</NavLink>
 				)

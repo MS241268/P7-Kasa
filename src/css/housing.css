@@ -68,18 +68,18 @@
 	text-align: end;
 }
 
-.lgtDetails {
+.housingDetails {
 	width:100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.lgtDetails .articleCollapse{
+.housingDetails .articleCollapse{
 	width: 45%;
 	margin-top: 0px;
 }
 
-.lgtDetails .articleCollapse ul {
+.housingDetails .articleCollapse ul {
 	font-size: 18px;
 }
