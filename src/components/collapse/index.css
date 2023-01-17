@@ -6,6 +6,14 @@
 	border-radius: 18px 18px 5px 5px;
 }
 
+.articleCollapseClosed {
+	width:80%;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: white;
+	border-radius: 18px 18px 5px 5px;
+}
+
 .btnCollapse {
 	width:100%;
 	height: 52px;
