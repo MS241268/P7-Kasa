@@ -16,7 +16,7 @@ function Collapse (props) {
 			</button>
 			{ open && (
 				<ul className='ulCollapse'>
-					<li>{ props.content }</li>
+					{ props.content }
 				</ul> 
 			)}
 		</article>

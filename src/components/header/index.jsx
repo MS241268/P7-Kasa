@@ -6,13 +6,16 @@ import logo from '../../images/logo_kasa.svg'
 function Header(){
 	return (
 		<header>
-			<NavLink to="/" className= "logo_link_container">
-				<img src={logo} alt = "Logo Kasa"   />
+			<NavLink
+			 to="/" className= "logo_link_container">
+			<img src={logo} alt = "Logo Kasa"   />
 			</NavLink>
 			<nav>
 				<ul>
-					<li><NavLink to="/">Accueil</NavLink></li>
-					<li><NavLink to="/about">A propos</NavLink></li>
+					{/*destructuring synthax : '{isActive}' : permet de connaître la valeur de la propriété 'isActive' ('true' ou 'false') */}
+					{/* 'activePage' : mise en forme CSS du lien de la page active dans le dossier 'header/css' */}
+					<li><NavLink className = {({isActive}) => (isActive ? "activePage" : null)} to="/">Accueil</NavLink></li>
+					<li><NavLink className = {({isActive}) => (isActive ? "activePage" : null)} to="/about">A propos</NavLink></li>
 				</ul>
 			</nav>
 		</header>

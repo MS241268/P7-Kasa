@@ -26,6 +26,22 @@
 	background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
 
-ul {
+.collapse_section-about .articleOpenedCollapse {
+	width:80%;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: #F6F6F6;
+	border-radius: 18px 18px 5px 5px;
+}
+
+.collapse_section-about .articleClosedCollapse {
+	width:80%;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: white;
+	border-radius: 18px 18px 5px 5px;
+}
+
+.collapse_section-about ul {
 	font-size: 24px;
 }

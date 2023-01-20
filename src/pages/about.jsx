@@ -10,7 +10,7 @@ function About() {
 			<img src = { aboutBanner } alt = "un paysage montagneux"/>
 			<div className = "aboutBannerBackGround"></div>
 		</section>
-		<section>
+		<section className = 'collapse_section-about'>
 			<Collapse label = "Fiabilité" content = { aboutData.fiability }></Collapse>
 			<Collapse label = "Respect" content = { aboutData.respect }></Collapse>
 			<Collapse label = "Service" content = { aboutData.service }></Collapse>

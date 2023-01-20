@@ -74,11 +74,12 @@
 	justify-content: space-between;
 }
 
-.housingDetails .articleOpenedCollapse ,.articleClosedCollapse{
+.housingDetails .articleOpenedCollapse ,.articleClosedCollapse{ 
 	width: 45%;
 	margin-top: 0px;
+	margin-bottom: 30px;
 }
 
-.housingDetails .articleCollapse ul {
+.housingDetails ul {
 	font-size: 18px;
 }

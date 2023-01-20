@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import Collapse from "../components/collapse"
 import housingsDataBase from '../data_files/logements.json'
 import Tags from '../components/tag'
@@ -14,56 +14,58 @@ function Housing() {
 	const housing =
 	housingsDataBase.find ((housingData) =>
 	housingData.id === productId)
-	console.log({housing})
-	return (
-		<main>
-			<Slider></Slider>
+	if (housing){
+		return (
+			<main>
+				<Slider slides = { housing.pictures }>
+				</Slider>
 
-			<section className="information_section">
-				<article className="left_article">
-					<h1>{ housing.title }</h1>
-					<p>{ housing.location }</p>
-					<ul className="tags_ul">
-					{ housing.tags.map ((tag, index) =>
-					(
-						<Tags key = { index } tags = { tag }></Tags>
-					)
-					)}
-					</ul>
-				</article>
+				<section className="information_section">
+					<article className="left_article">
+						<h1>{ housing.title }</h1>
+						<p>{ housing.location }</p>
+						<ul className="tags_ul">
+						{ housing.tags.map ((tag, index) =>
+						(
+							<Tags key = { index } tags = { tag }></Tags>
+						)
+						)}
+						</ul>
+					</article>
 
-				<article className = "right_article">
-					
-					<div className = "host_div">
-						
-						<div className = "host_name">{ housing.host.name }</div>
-						<img src = { housing.host.picture } alt = "Profil annonceur" className = "picture"/>
-					</div>
+					<article className = "right_article">
+						<div className = "host_div">
+							
+							<div className = "host_name">{ housing.host.name }</div>
+							<img src = { housing.host.picture } alt = "Profil annonceur" className = "picture"/>
+						</div>
 
-					<div className= "rating_div">
-						{ stars.map ((level) =>
-						housing.rating >= level ? (
-							<img key = { level.toString() }
-							className = "star"
-							src = { fullStar } alt = "Etoile orange"/>
-						) :
-						(<img key = { level.toString() }
-							className = "star"
-							src = { emptyStar} alt = "Etoile grise"/>
-						))}
-					</div>
-				</article>
-			</section>
+						<div className= "rating_div">
+							{ stars.map ((level) =>
+							housing.rating >= level ? (
+								<img key = { level.toString() }
+								className = "star"
+								src = { fullStar } alt = "Etoile orange"/>
+							) :
+							(<img key = { level.toString() }
+								className = "star"
+								src = { emptyStar} alt = "Etoile grise"/>
+							))}
+						</div>
+					</article>
+				</section>
 
-			<section className = "housingDetails">
-				<Collapse label = "Description" content = { housing.description }></Collapse>
-				<Collapse label = "Equipements" content = { housing.equipments.map((equipments, index) =>
-					(<li key = { index }>
-						{ equipments }
-					</li>))}>
-				</Collapse>
-			</section>
-		</main>
-	)
-}
+				<section className = "housingDetails">
+					<Collapse label = "Description" content = { housing.description }></Collapse>
+					<Collapse label = "Equipements" content = { housing.equipments.map((equipments, index) =>
+						(<li key = { index }>
+							{ equipments }
+						</li>))}>
+					</Collapse>
+				</section>
+			</main>
+		)} else {
+			return(
+				<Navigate to ="/404"></Navigate>)
+	}}
 export default Housing
