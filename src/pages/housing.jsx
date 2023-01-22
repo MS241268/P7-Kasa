@@ -14,8 +14,8 @@ function Housing() {
 	const housing =
 	housingsDataBase.find ((housingData) =>
 	housingData.id === productId)
-	if (housing){
-		return (
+	if (housing){//Test si le logement existe
+		return (//Le logement existe
 			<main>
 				<Slider slides = { housing.pictures }>
 				</Slider>
@@ -64,7 +64,7 @@ function Housing() {
 					</Collapse>
 				</section>
 			</main>
-		)} else {
+		)} else {//Le logement n'existe pas
 			return(
 				<Navigate to ="/404"></Navigate>)
 	}}

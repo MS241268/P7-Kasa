@@ -1,17 +1,56 @@
 .slider {
+	position: relative;
 	width : 95%;
 	height: 415px;
 	border-radius: 25px;
-	background-color: #FF6060;
 	margin: auto;
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+}
+
+.backgroundSlider {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: inherit;
+	border-radius: inherit;
+	background: linear-gradient(transparent, rgba(0,0,0,0.2));
+	z-index: 1;
+}
+
+.picturesContainer {
+	width: 100%;
+	height: inherit;
+	border-radius: inherit;
+}
+
+.picturesHousing {
+	position: absolute;
+	top: 0;
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
 }
 
 .arrow_navigate {
 	width: inherit;
+	position: absolute;
+	top: 42%;
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
+}
+
+.numberPicture {
+	width:auto;
+	font-size: 18px;
+	margin: auto;
+	position: absolute;
+	bottom: 5%;
+	color: white;
+	z-index: 1;
 }
