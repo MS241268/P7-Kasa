@@ -28,7 +28,7 @@ function Slider ({ slides }) {
 				<img src= { leftArrow } onClick = {previousPicture} alt = 'Flèche gauche'/>
 				<img src= { rightArrow } onClick = {nextPicture} alt = 'Flèche droite'/>
 			</div>) : null}
-			<div className='numberPicture'>{currentPicture}/{slides.length-1}</div>
+			<div className='numberPicture'>{currentPicture + 1 }/{slides.length}</div>
 		</section>
 	)
 }
