@@ -56,7 +56,7 @@ function Housing() {
 				</section>
 
 				<section className = "housingDetails">
-					<Collapse label = "Description" content = { housing.description }></Collapse>
+					<Collapse label = "Description" content = { <li>{housing.description}</li> }></Collapse>
 					<Collapse label = "Equipements" content = { housing.equipments.map((equipments, index) =>
 						(<li key = { index }>
 							{ equipments }
