@@ -1,3 +1,8 @@
+.page_404 {
+	width: 97%;
+	margin:auto;
+}
+
 .errorPage {
 	text-align: center;
 	color: #FF6060;
@@ -18,4 +23,24 @@
 .errorPage p{
 	font-size: 18px;
 	margin-bottom: 70px;
+}
+
+@media screen and (max-width: 768px) {
+	.errorPage h1 {
+		font-size: 120px;
+	}
+
+	.errorPage h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+	.errorPage h1 {
+		font-size: 180px;
+	}
+
+	.errorPage h2 {
+		font-size: 25px;
+	}
 }

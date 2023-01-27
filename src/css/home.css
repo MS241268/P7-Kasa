@@ -36,9 +36,6 @@
 .cards_section {
     width: 90%;
     margin: auto;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px

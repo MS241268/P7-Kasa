@@ -1,3 +1,11 @@
+.articleOpenedCollapse {
+	width:80%;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: #F6F6F6;
+	border-radius: 18px 18px 5px 5px;
+}
+
 .btnCollapse {
 	width:100%;
 	height: 52px;
@@ -28,6 +36,20 @@
 	width: 100%;
 	padding: 3%;
 	list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+	.btnCollapse span {
+		font-size: 12px;
+	}
+
+	.arrowCollapse {
+		width:15px;
+	}
+
+	.articleOpenedCollapse {
+		width:95%;
+	}
 }
 
 
