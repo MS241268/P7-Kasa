@@ -32,7 +32,7 @@
 	top: 0;
 	width: inherit;
 	height: inherit;
-	object-fit: cover;
+	object-fit:cover;
 	border-radius: inherit;
 }
 
@@ -45,8 +45,11 @@
 	z-index: 1;
 }
 
+.arrow_navigate :hover {
+	cursor: pointer;
+}
+
 .numberPicture {
-	width:auto;
 	font-size: 18px;
 	margin: auto;
 	position: absolute;

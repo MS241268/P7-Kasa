@@ -64,8 +64,9 @@ function Housing() {
 					</Collapse>
 				</section>
 			</main>
-		)} else {//Le logement n'existe pas
+		)}
+			//Le logement n'existe pas
 			return(
 				<Navigate to ="/404"></Navigate>)
-	}}
+	}
 export default Housing

@@ -13,6 +13,7 @@
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	gap:50px;
 	margin-bottom: 40px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .left_article {
-	width: 70%;
+	min-width: 70%;
 }
 
 .tags_ul {
@@ -42,11 +43,11 @@
 }
 
 .right_article{
-	width: 20%;
+	min-width: 20%;
 }
 
 .host_div {
-	width: 100%;
+	min-width: 100%;
 	display: flex;
 	margin: auto;
 	justify-content: flex-end;
@@ -55,11 +56,12 @@
 }
 
 .host_name {
-	width:30%;
+	width:80px;
 }
 
 .picture {
-	width: 64px;
+	min-width: 64px;
+	margin-left: 5px;
 	height: 64px;
 	border-radius: 50%;
 }

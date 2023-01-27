@@ -5,15 +5,15 @@ import './index.css'
 
 function Slider ({ slides }) {
 	const [currentPicture, setCurrentPicture] = useState(0)
-	console.log (currentPicture, 'longueur'+slides.length)
+
 	const previousPicture = () => {
 		setCurrentPicture (currentPicture !== 0 ? currentPicture - 1 : (slides.length-1))}//Condition si clic sur la flèche 'prévious' et 1ère image courante => Retour sur la dernière image
-		console.log (currentPicture)
+
 	const nextPicture = () => {
 		setCurrentPicture (currentPicture !== (slides.length - 1) ? currentPicture + 1 : 0)//Condition si clic sur la flèche 'next' et dernière image courante => Retour sur la 1ère image
-		console.log (currentPicture)
+
 	}
-	//console.log('slider:')
+
 	return(
 		<section className = "slider">
 			<div className='backgroundSlider'></div>

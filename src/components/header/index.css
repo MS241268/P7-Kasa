@@ -36,3 +36,16 @@ header ul li :hover {
 header .activePage {
 	text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+	header img {
+		width:145px;
+	}
+	header ul {
+		gap:18px;
+	}
+	header a {
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+}

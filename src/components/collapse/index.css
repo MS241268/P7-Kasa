@@ -16,6 +16,10 @@
 	color: white;
 }
 
+.btnCollapse :hover{
+	cursor: pointer;
+}
+
 .arrowCollapse {
 	margin-right: 2%;
 }
