@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import rightArrow from '../../images/right_arrow.svg'
-import leftArrow from '../../images/left_arrow.svg'
+import rightArrow from '../../assets/right_arrow.svg'
+import leftArrow from '../../assets/left_arrow.svg'
 import './index.css'
 
 function Slider ({ slides }) {

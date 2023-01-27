@@ -1,5 +1,5 @@
 import '../css/about.css'
-import aboutBanner from '../images/banner_background_about.jpg'
+import aboutBanner from '../assets/banner_background_about.jpg'
 import Collapse from "../components/collapse"
 import aboutData from '../data_files/abouttext'
 

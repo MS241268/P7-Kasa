@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.css'
-import downArrow from '../../images/down_arrow_collapse.svg'
-import upArrow from '../../images/up_arrow_collapse.svg'
+import downArrow from '../../assets/down_arrow_collapse.svg'
+import upArrow from '../../assets/up_arrow_collapse.svg'
 
 function Collapse (props) {
 	const [open, setOpen] = useState(false)

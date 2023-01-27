@@ -1,5 +1,5 @@
 import './index.css';
-import logo from '../../images/logo_footer.svg'
+import logo from '../../assets/logo_footer.svg'
 
 function Footer() {
 	const instantYear = new Date().getFullYear();

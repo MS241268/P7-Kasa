@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import '../css/home.css'
 import housingsDataBase from '../data_files/logements.json'
-import homeBanner from '../images/banner_background_home.jpg'
+import homeBanner from '../assets/banner_background_home.jpg'
 import Cards from "../components/card/index"
 
 function Home() {

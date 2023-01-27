@@ -1,10 +1,10 @@
 import { useParams, Navigate } from "react-router-dom"
 import Collapse from "../components/collapse"
-import housingsDataBase from '../data_files/logements.json'
+import housingsDataBase from '../datas/logements.json'
 import Tags from '../components/tag'
 import Slider from '../components/slider'
-import fullStar from '../images/full_star.svg'
-import emptyStar from '../images/empty_star.svg'
+import fullStar from '../assets/full_star.svg'
+import emptyStar from '../assets/empty_star.svg'
 import '../css/housing.css'
 
 const stars = [1,2,3,4,5]
