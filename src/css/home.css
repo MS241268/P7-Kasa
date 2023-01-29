@@ -17,11 +17,21 @@
 	border-radius: inherit;
 }
 
-.homeBanner h1 {
+.titleBannerEffect{
 	position: absolute;
 	font-size: 48px;
 	color: white;
 	z-index: 1;
+	animation: titleEffect 0.7s ease-in-out;
+}
+
+@keyframes titleEffect {
+	0% {
+		padding-bottom: 300px;
+	}
+	100% {
+		padding-bottom: 0px;
+	}
 }
 
 .homeBannerBackGround {
