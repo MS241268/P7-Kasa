@@ -19,7 +19,7 @@ function Slider ({ slides }) {
 			<div className='backgroundSlider'></div>
 			<div className = "picturesContainer">
 				{slides.map ((picture, index) => (
-					index === currentPicture && <img src =  { picture } alt = "Images du logement" key = { index } className = "picturesHousing" />
+					index === currentPicture && <img src =  { picture } alt = "Images du logement" key = { index } className = "picturesHousing"/>
 				))}
 			</div>
 
