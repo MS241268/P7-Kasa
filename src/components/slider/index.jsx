@@ -7,7 +7,7 @@ function Slider ({ slides }) {
 	const [currentPicture, setCurrentPicture] = useState(0)
 
 	const previousPicture = () => {
-		setCurrentPicture (currentPicture !== 0 ? currentPicture - 1 : (slides.length-1))}/*Condition si clic sur la flèche 'prévious' et 1ère image courante => Retour sur la dernière image*/
+		setCurrentPicture (currentPicture !== 0 ? currentPicture - 1 : (slides.length-1))}/*Condition si clic sur la flèche 'previous' et 1ère image courante => Retour sur la dernière image*/
 
 	const nextPicture = () => {
 		setCurrentPicture (currentPicture !== (slides.length - 1) ? currentPicture + 1 : 0)}/*Condition si clic sur la flèche 'next' et dernière image courante => Retour sur la 1ère image*/
