@@ -8,7 +8,8 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    //BrowserRouter basename = "/P7-Kasa" : permet la mise en ligne de l'appli React lorsque l'on utilise 'react-router-dom'
+    <BrowserRouter basename = "/P7-Kasa">
       <Header />
 
       <Routes>
