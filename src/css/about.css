@@ -39,6 +39,11 @@
 }
 
 @media screen and (max-width: 768px) {
+	.aboutBanner {
+		height: 117px;
+		border-radius: 10px;
+	}
+
 	.collapse_section-about .articleClosedCollapse {
 		width:95%;
 	}
