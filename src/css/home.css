@@ -64,6 +64,7 @@
 @media screen and (max-width: 768px) {
 	.homeBanner {
 		height: 117px;
+		border-radius: 10px;
 	}
 
 	.homeBanner h1 {
