@@ -11,10 +11,10 @@ function About() {
 			<div className = "aboutBannerBackGround"></div>
 		</section>
 		<section className = 'collapse_section-about'>
-			<Collapse label = "Fiabilité" content = { aboutData.fiability }></Collapse>
-			<Collapse label = "Respect" content = { aboutData.respect }></Collapse>
-			<Collapse label = "Service" content = { aboutData.service }></Collapse>
-			<Collapse label = "Responsabilité" content = { aboutData.security }></Collapse>
+			<Collapse label = "Fiabilité" content = { <li>{ aboutData.fiability }</li> }></Collapse>
+			<Collapse label = "Respect" content = { <li>{ aboutData.respect }</li> }></Collapse>
+			<Collapse label = "Service" content = { <li>{ aboutData.service }</li> }></Collapse>
+			<Collapse label = "Responsabilité" content = { <li>{ aboutData.security }</li> }></Collapse>
 		</section>
 	</main>
 	)

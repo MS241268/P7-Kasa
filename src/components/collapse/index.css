@@ -1,8 +1,16 @@
 .articleOpenedCollapse {
-	width:80%;
+	width:100%;
 	margin: auto;
 	margin-bottom: 30px;
 	background-color: #F6F6F6;
+	border-radius: 18px 18px 5px 5px;
+}
+
+.articleClosedCollapse {
+	width:100%;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: white;
 	border-radius: 18px 18px 5px 5px;
 }
 
@@ -30,25 +38,49 @@
 
 .arrowCollapse {
 	margin-right: 2%;
+	transform: rotate(0deg);
+	transition: 0.3s ease-in-out;
+}
+
+.arrowCollapseRotate {
+	margin-right: 2%;
+	transform: rotate(180deg);
+	transition: 0.3s ease-in-out;
 }
 
 .ulCollapse {
 	width: 100%;
 	padding: 3%;
 	list-style: none;
+
 }
 
 @media screen and (max-width: 768px) {
+	.articleOpenedCollapse {
+		width:100%;
+		border-radius: 5px;
+	}
+
+	.articleClosedCollapse {
+		width:100%;
+		border-radius: 5px;
+	}
+
+	.btnCollapse {
+		height: 30px;
+		border-radius: 5px;
+	}
+
 	.btnCollapse span {
 		font-size: 12px;
 	}
 
 	.arrowCollapse {
-		width:15px;
+		width: 15px;
 	}
 
-	.articleOpenedCollapse {
-		width:95%;
+	.arrowCollapseRotate {
+		width: 15px
 	}
 }
 

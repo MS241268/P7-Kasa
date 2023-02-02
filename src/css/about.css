@@ -26,7 +26,7 @@
 	background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
 
-.collapse_section-about .articleClosedCollapse {
+.collapse_section-about {
 	width:80%;
 	margin: auto;
 	margin-bottom: 30px;
@@ -44,8 +44,10 @@
 		border-radius: 10px;
 	}
 
-	.collapse_section-about .articleClosedCollapse {
-		width:95%;
+	.collapse_section-about {
+		width:94%;
+		margin: auto;
+		border-radius: 5px;
 	}
 
 	.collapse_section-about ul {

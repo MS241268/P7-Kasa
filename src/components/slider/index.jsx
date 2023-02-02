@@ -14,7 +14,7 @@ function Slider ({ slides }) {
 
 	return (
 		<section className = "slider">
-			<div className='backgroundSlider'></div>
+			<div className= 'backgroundSlider'></div>
 			<div className = "picturesContainer">
 				{slides.map ((picture, index) => (
 					index === currentPicture && <img src =  { picture } alt = "Images du logement" key = { index } className = "picturesHousing"/>
