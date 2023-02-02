@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/P7-Kasa/static/css/main.d1ec99e3.css",
-    "main.js": "/P7-Kasa/static/js/main.bde797be.js",
+    "main.css": "/P7-Kasa/static/css/main.3e6122bd.css",
+    "main.js": "/P7-Kasa/static/js/main.a241c60f.js",
     "static/media/banner_background_about.jpg": "/P7-Kasa/static/media/banner_background_about.6092ac33176bf3b8f807.jpg",
     "static/media/banner_background_home.jpg": "/P7-Kasa/static/media/banner_background_home.4917855034b2e5c1d2d1.jpg",
     "static/media/logo_kasa.svg": "/P7-Kasa/static/media/logo_kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
@@ -12,11 +12,11 @@
     "static/media/left_arrow.svg": "/P7-Kasa/static/media/left_arrow.19918a1634b1441a25ae0b50e6b1f85b.svg",
     "static/media/empty_star.svg": "/P7-Kasa/static/media/empty_star.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/full_star.svg": "/P7-Kasa/static/media/full_star.6430150c126a3adf92c132c52c9c7428.svg",
-    "main.d1ec99e3.css.map": "/P7-Kasa/static/css/main.d1ec99e3.css.map",
-    "main.bde797be.js.map": "/P7-Kasa/static/js/main.bde797be.js.map"
+    "main.3e6122bd.css.map": "/P7-Kasa/static/css/main.3e6122bd.css.map",
+    "main.a241c60f.js.map": "/P7-Kasa/static/js/main.a241c60f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ec99e3.css",
-    "static/js/main.bde797be.js"
+    "static/css/main.3e6122bd.css",
+    "static/js/main.a241c60f.js"
   ]
 }
