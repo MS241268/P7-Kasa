@@ -1,8 +1,8 @@
 import '../tag/index.css'
 
-function Tags ({tags}) {
+function Tags({tags}) {
 	return (
-			<li className='tags_li'>{ tags }</li>
+			<li className='tags_li'>{tags}</li>
 	)
 }
 export default Tags

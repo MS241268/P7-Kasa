@@ -44,11 +44,14 @@
 }
 
 .cards_section {
-    width: 90%;
-    margin: auto;
+	grid-gap: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    padding: 56px 50px;
+    width: 90%;
+    background-color: #F6F6F6;
+    border-radius: 25px;
 }
 
 .cards_section a {
@@ -76,8 +79,11 @@
 		width: 93%;
 		max-width: 542px;
 		display: grid;
-		grid-template-columns: repeat(1, 1fr)
+		grid-template-columns: repeat(1, 1fr);
+		background-color: transparent !important;
+		padding: 0px;
 	}
+
 }
 
 @media screen and (min-width:769px) and (max-width: 1024px) {

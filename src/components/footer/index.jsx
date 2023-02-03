@@ -2,10 +2,10 @@ import './index.css';
 import logo from '../../assets/logo_footer.svg'
 
 function Footer() {
-	const instantYear = new Date().getFullYear();
+	const instantYear=new Date().getFullYear();
 	return (
 		<footer>
-			<img src = {logo} alt = "Logo Kasa"/>
+			<img src={logo} alt = "Logo Kasa"/>
 			<p>© {instantYear} Kasa. All rights reserved</p>
 		</footer>
 	)
