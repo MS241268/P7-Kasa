@@ -32,5 +32,10 @@
 	font-size: 18PX;
 	padding: 15px;
 	z-index: 1;
+}
 
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+	.cards_article {
+		height: 255px
+	}
 }
