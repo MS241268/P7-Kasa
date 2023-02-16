@@ -4,7 +4,7 @@ import leftArrow from '../../assets/left_arrow.svg'
 import './index.css'
 
 function Slider({slides}) {
-	const [currentPicture, setCurrentPicture] = useState(0)
+	const [currentPicture, setCurrentPicture]= useState(0)
 
 	const previousPicture=() => {
 		setCurrentPicture (currentPicture !== 0 ? currentPicture - 1 : (slides.length-1))}/*Condition si clic sur la flèche 'previous' et 1ère image courante => Retour sur la dernière image*/
