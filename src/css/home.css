@@ -27,9 +27,11 @@
 
 @keyframes titleEffect {
 	0% {
+		opacity: 0;
 		padding-bottom: 50%;
 	}
 	100% {
+		opacity: 1;
 		padding-bottom: 0px;
 	}
 }
