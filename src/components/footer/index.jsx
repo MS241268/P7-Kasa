@@ -5,7 +5,7 @@ function Footer() {
 	const instantYear=new Date().getFullYear();
 	return (
 		<footer>
-			<img src={logo} alt = "Logo Kasa"/>
+			<img src={logo} alt="Logo Kasa"/>
 			<p>© {instantYear} Kasa. All rights reserved</p>
 		</footer>
 	)

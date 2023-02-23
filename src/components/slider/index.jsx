@@ -15,9 +15,9 @@ function Slider({slides}) {
 	return (
 		<section className="slider">
 			<div className='backgroundSlider'></div>
-			<div className="picturesContainer">
+			<div className="picturesContainer" style={{transform:`translateX(-${currentPicture * 100}%)`}}>
 				{slides.map((picture, index) => (
-					index === currentPicture && <img src={picture} alt="Images du logement" key={index} className="picturesHousing"/>
+					<img src={picture} alt={`Présentation  ${index+1} sur ${slides.length} du logement`} key={index} className="picturesHousing"/>
 				))}
 			</div>
 

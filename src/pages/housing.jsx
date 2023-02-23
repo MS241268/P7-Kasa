@@ -7,11 +7,11 @@ import fullStar from '../assets/full_star.svg'
 import emptyStar from '../assets/empty_star.svg'
 import '../css/housing.css'
 
-const stars = [1,2,3,4,5]
+const stars= [1,2,3,4,5]
 
 function Housing() {
-	const {productId} = useParams()
-	const housing =
+	const {productId}= useParams()
+	const housing=
 	housingsDataBase.find ((housingData) =>
 	housingData.id === productId)
 	if (housing){//Test si le logement existe
