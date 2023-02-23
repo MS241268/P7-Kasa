@@ -89,5 +89,12 @@
 @media screen and (min-width:769px) and (max-width: 1024px) {
 	.arrow_navigate img{
 		width: 18px;
+		height: 18px;
+	}
+
+	.arrow_navigate {
+		top: 38%;
+		align-items: center;
+		padding: 15px;
 	}
 }
