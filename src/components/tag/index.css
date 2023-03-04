@@ -1,3 +1,11 @@
+.tags_ul {
+	font-size: 14px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+}
+
 .tags_li {
 	background-color: #FF6060;
 	color: white;
