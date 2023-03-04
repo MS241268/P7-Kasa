@@ -40,7 +40,7 @@
 	transition: 0.3s ease-in-out;
 }
 
-.ulCollapse {
+.contentCollapse {
 	width: 100%;
 	padding: 3%;
 	list-style: none;

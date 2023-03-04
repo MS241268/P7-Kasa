@@ -2,7 +2,10 @@ import '../tag/index.css'
 
 function Tags({tags}) {
 	return (
-			<li className='tags_li'>{tags}</li>
+		<ul className="tags_ul">
+			{tags.map((tag, index) =>
+			<li className='tags_li' key={index}>{tag}</li>)}
+		</ul>
 	)
 }
 export default Tags

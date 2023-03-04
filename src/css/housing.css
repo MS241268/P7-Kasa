@@ -90,6 +90,10 @@
 	font-size: 18px;
 }
 
+.housingDetails p {
+	font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
 	.information_section {
 		width: 95%;
@@ -149,6 +153,10 @@
 	}
 
 	.housingDetails ul {
+		font-size: 12px;
+	}
+
+	.housingDetails p {
 		font-size: 12px;
 	}
 }

@@ -24,13 +24,7 @@ function Housing() {
 					<article className="left_article">
 						<h1>{housing.title}</h1>
 						<p>{housing.location}</p>
-						<ul className="tags_ul">
-						{housing.tags.map((tag, index) =>
-						(
-							<Tags key={index} tags={tag}></Tags>
-						)
-						)}
-						</ul>
+						<Tags tags={housing.tags}/>
 					</article>
 
 					<article className="right_article">
@@ -55,12 +49,8 @@ function Housing() {
 				</section>
 
 				<section className="housingDetails">
-					<Collapse label="Description" content={<li>{housing.description}</li>}></Collapse>
-					<Collapse label="Equipements" content={housing.equipments.map((equipments, index) =>
-						(<li key={index}>
-							{equipments}
-						</li>))}>
-					</Collapse>
+					<Collapse label="Description" content={housing.description}/>
+					<Collapse label="Equipements" content={housing.equipments}/>
 				</section>
 			</main>
 		)}
