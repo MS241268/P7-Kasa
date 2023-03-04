@@ -36,7 +36,7 @@ function Housing() {
 					<article className="right_article">
 						<div className="host_div">
 							
-							<div className="host_name">{housing.host.name}</div>
+							<p className="host_name">{housing.host.name}</p>
 							<img src={housing.host.picture} alt="Profil annonceur" className="picture"/>
 						</div>
 
