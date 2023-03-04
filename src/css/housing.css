@@ -33,14 +33,6 @@
 	min-width: 70%;
 }
 
-.tags_ul {
-	font-size: 14px;
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	list-style: none;
-}
-
 .right_article{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
