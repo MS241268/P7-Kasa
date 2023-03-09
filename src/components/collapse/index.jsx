@@ -13,15 +13,15 @@ function Collapse (props) {
 				<span>{props.label}</span>
 				<img src= {downArrow} alt="Ouverture ou fermeture de l'élément" className={open ? 'arrowCollapseRotate' : 'arrowCollapse'}/>
 			</button>
-			{open && (
+			{(
 				Array.isArray(props.content) ? //Le contenu est il un tableau ?
-				<ul className='collapseContent'> {//Le contenu est un tableau
+				<ul className={open?"collapseContent":"hidden"}> {//Le contenu est un tableau
 					props.content.map((equipments, index) =>
 					(<li key={index}>
 						{equipments}
 					</li>))}
 				</ul> 
-				: <p className='collapseContent'>{props.content}</p>//Le contenu n'est pas un tableau
+				: <p className={open?"collapseContent":"hidden"}>{props.content}</p>//Le contenu n'est pas un tableau
 			)}
 		</article>
 	)

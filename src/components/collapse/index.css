@@ -1,9 +1,10 @@
 .articleCollapse {
-	width:100%;
 	margin: auto;
 	margin-bottom: 30px;
 	background-color: #F6F6F6;
 	border-radius: 18px 18px 5px 5px;
+	overflow:hidden;
+	min-height: 56px;
 }
 
 .btnCollapse {
@@ -41,27 +42,32 @@
 }
 
 .collapseContent {
-	width: 100%;
+	margin-top:0px;
+	margin-bottom: 0px;
 	padding: 3%;
 	list-style: none;
-	animation: ulEffect 0.5s ease-in-out
+	font-size: 24px;
+	color: #FF6060;
+	opacity:1;
+	transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in;
 }
 
-@keyframes ulEffect {
-	0% {
-		margin-top: -30px;
-		opacity: 0;
-	}
-	
-	100% {
-		margin-top: 0;
-	}
+.hidden{
+	margin-top:-220px;
+	margin-bottom: 0px;
+	padding: 3%;
+	list-style: none;
+	font-size: 24px;
+	color: #FF6060;
+	opacity: 0;
+	transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-out;
 }
 
 @media screen and (max-width: 768px) {
 	.articleCollapse {
 		width:100%;
 		border-radius: 5px;
+		min-height: 30px;
 	}
 
 	.btnCollapse {
