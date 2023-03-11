@@ -45,15 +45,15 @@
 	margin: auto;
 	justify-content: flex-end;
 	align-items: center;
+	grid-gap: 5%;
 }
 
 .host_name {
-	width:80px;
+	width:100px;
 }
 
 .picture {
 	min-width: 64px;
-	margin-left: 5px;
 	height: 64px;
 	border-radius: 50%;
 }
