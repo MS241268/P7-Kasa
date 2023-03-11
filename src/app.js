@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Housing from "./pages/housing";
@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     //BrowserRouter basename = "/P7-Kasa" : permet la mise en ligne de l'appli React lorsque l'on utilise 'react-router-dom'
-    <BrowserRouter basename="/P7-Kasa">
+    <HashRouter>
       <Header />
 
       <Routes>
@@ -20,7 +20,7 @@ function App() {
       </Routes>
       
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 export default App;
