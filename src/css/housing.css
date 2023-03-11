@@ -51,6 +51,7 @@
 .host_name {
 	width:100px;
 	text-align: end;
+	word-spacing: 20px;
 }
 
 .picture {
