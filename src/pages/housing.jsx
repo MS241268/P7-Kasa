@@ -36,11 +36,11 @@ function Housing() {
 						<div className="rating_div">
 							{ stars.map((level) =>
 							housing.rating >= level ? (
-								<img key={level.toString()}
+								<img key={level}
 								className="star"
 								src={fullStar} alt="Etoile orange"/>
 							) :
-							(<img key={level.toString()}
+							(<img key={level}
 								className="star"
 								src={emptyStar} alt="Etoile grise"/>
 							))}
