@@ -2,7 +2,7 @@ import {useState} from 'react'
 import './index.css'
 import downArrow from '../../assets/down_arrow_collapse.svg'
 
-function Collapse (props) {
+function Collapse ({label, content}) {
 	const [open, setOpen]=useState(false)
 	function toggle() {
 		setOpen(!open)
@@ -10,18 +10,18 @@ function Collapse (props) {
 	return (
 		<article className='articleCollapse'>
 			<button onClick={toggle} className='btnCollapse'>
-				<span>{props.label}</span>
+				<span>{label}</span>
 				<img src= {downArrow} alt="Ouverture ou fermeture de l'élément" className={open ? 'arrowCollapseRotate' : 'arrowCollapse'}/>
 			</button>
 			{(
-				Array.isArray(props.content) ? //Le contenu est il un tableau ?
+				Array.isArray(content) ? //Le contenu est il un tableau ?
 				<ul className={open?"collapseContent":"hidden"}> {//Le contenu est un tableau
-					props.content.map((equipments, index) =>
+					content.map((equipments, index) =>
 					(<li key={index}>
 						{equipments}
 					</li>))}
 				</ul> 
-				: <p className={open?"collapseContent":"hidden"}>{props.content}</p>//Le contenu n'est pas un tableau
+				: <p className={open?"collapseContent":"hidden"}>{content}</p>//Le contenu n'est pas un tableau
 			)}
 		</article>
 	)
